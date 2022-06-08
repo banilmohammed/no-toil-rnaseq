@@ -47,6 +47,12 @@ tar -xzvf rsem_ref_chr6.tar.gz
 tar -xzvf starIndex_chr6.tar.gz
 ```
 
+Make star output dir within /data.
+
+```
+mkdir star
+```
+
 Run docker image.
 
 ```

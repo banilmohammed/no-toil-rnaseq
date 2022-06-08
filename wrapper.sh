@@ -3,7 +3,7 @@
 # put all STAR and RSEM results in outside dir that is mounted inside the container
 # no files should be created inside the docker
 echo "Cutadapt 1.9: Trimming Adapters..."
-cutadapt -a AGATCGGAAGAG -m 35 -A AGATCGGAAGAG -o /data/R1_cutadapt.fastq -p /data/R2_cutadapt.fastq /data/TEST_R1.fastq.gz /data/TEST_R2.fastq.gz
+cutadapt -a AGATCGGAAGAG -m 35 -A AGATCGGAAGAG -o /data/R1_cutadapt.fastq -p /data/R2_cutadapt.fastq "$@"
 
 echo "STAR 2.4.2a: Algining with HG38 Index..."
 STAR --runThreadN 160 \
