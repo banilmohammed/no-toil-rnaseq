@@ -1,14 +1,14 @@
 FROM ubuntu:14.04
 
 RUN apt-get update && apt-get install -y \
-	python \
-	python-pip \
-	python-dev \
-	build-essential \
-	wget \
-	perl-doc \
- 	cython \
-	zlib1g-dev \
+	python=2.7.5-5ubuntu3 \
+	python-pip=1.5.4-1ubuntu4 \
+	python-dev=2.7.5-5ubuntu3 \
+	build-essential=11.6ubuntu6 \
+	wget=1.15-1ubuntu1.14.04.5 \
+	perl-doc=5.18.2-2ubuntu1.7 \
+ 	cython=0.20.1+git90-g0e6e38e-1ubuntu2 \
+	zlib1g-dev=1:1.2.8.dfsg-1ubuntu1.1 \
 	libncurses-dev
 
 # install cutadapt 1.9
